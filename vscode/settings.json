@@ -1,0 +1,45 @@
+// Open User Settings (JSON) -> append to the settings.json file
+
+{
+  "vim.leader": " ",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "x"],
+      "commands": [":bd!"]
+    },
+    {
+      "before": ["tab"],
+      "commands": [":bnext"]
+    },
+    {
+      "before": ["shift+tab"],
+      "commands": [":bprevious"]
+    },
+    {
+      "before": ["<leader>", "f", "w"],
+      "commands": ["search.action.openEditor"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["workbench.files.action.collapseExplorerFolders"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    }
+  ]
+}
