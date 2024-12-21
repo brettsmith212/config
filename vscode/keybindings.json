@@ -28,5 +28,9 @@
   {
     "key": "ctrl+h",
     "command": "workbench.action.terminal.focusPreviousPane"
+  },
+  {
+    "key": "ctrl+a -",
+    "command": "workbench.action.terminal.split"
   }
 ]
