@@ -5,3 +5,4 @@
 - skhd
 - tmux
 - vscode configs
+- ghostty
