@@ -1,5 +1,5 @@
 theme = SeaShells
-font-size = 20
+font-size = 16
 shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
 adjust-cell-height = 35%
@@ -19,6 +19,12 @@ keybind = ctrl+a>p=previous_tab
 
 keybind = ctrl+a>r=reload_config
 keybind = ctrl+a>x=close_surface
+
+# resize split pane
+keybind = ctrl+j=resize_split:down,25
+keybind = ctrl+k=resize_split:up,25
+keybind = ctrl+h=resize_split:left,25
+keybind = ctrl+l=resize_split:right,25
 
 # move cursor
 keybind = ctrl+a>j=goto_split:bottom
