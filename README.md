@@ -9,5 +9,5 @@
 
 ## Ubuntu Omakub Notes
 - To map caps lock to control
-`gsettings set org.gnome.desktop.input-sources xkb-options "[]"`
-`gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"`
+  - `gsettings set org.gnome.desktop.input-sources xkb-options "[]"`
+  - `gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"`
