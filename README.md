@@ -23,3 +23,10 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Ctrl>4'
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Ctrl>5']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Ctrl>6']"
 ```
+- Custom Keymapping for LazyVim
+```
+vim.keymap.set("n", "<leader>i", "<cmd> lua vim.diagnostic.open_float() <CR>")
+vim.keymap.set("i", "jk", "<Esc>", { noremap = true, silent = true })
+vim.keymap.set("n", "<tab>", "<cmd> bnext <CR>")
+vim.keymap.set("n", "<s-tab>", "<cmd> bprevious <CR>")
+```
