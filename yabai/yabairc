@@ -32,3 +32,7 @@ yabai -m rule --add app="^FaceTime$" manage=off
 # Border Color
 yabai -m config window_border on
 yabai -m config active_window_border_color 0xff775759
+
+# Ghostty
+yabai -m signal --add app='^Ghostty$' event=window_created action='yabai -m space --layout bsp'
+yabai -m signal --add app='^Ghostty$' event=window_destroyed action='yabai -m space --layout bsp'
