@@ -1,0 +1,81 @@
+[
+  {
+    "bindings": {
+      "ctrl-a h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-a l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-a k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-a j": ["workspace::ActivatePaneInDirection", "Down"]
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      // close terminal when toggling out
+      "ctrl-`": "workspace::ToggleBottomDock",
+      "ctrl-t": "workspace::NewTerminal",
+      "ctrl-/": "assistant::InlineAssist"
+    }
+  },
+  {
+    "context": "AssistantPanel",
+    "bindings": {
+      // close assistant panel when toggling out
+      "cmd-?": "workspace::ToggleRightDock"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      // close project panel when toggling out
+      "cmd-shift-e": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "Editor && !menu",
+    "bindings": {
+      "ctrl-/": "assistant::InlineAssist"
+    }
+  },
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in normal & visual mode
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work only in normal mode
+      // "down": ["workspace::SendKeystrokes", "4 j"]
+      // "up": ["workspace::SendKeystrokes", "4 k"]
+      "tab": "pane::ActivateNextItem",
+      "shift-tab": "pane::ActivatePrevItem",
+      "space f f": "file_finder::Toggle", // telescope binding
+      "space f w": "pane::DeploySearch", // telescope binding
+      "space i": "editor::GoToDiagnostic", // show diagnostics
+      "space r n": "editor::ToggleLineNumbers",
+      "space x": "pane::CloseActiveItem",
+      "g r": "editor::FindAllReferences", // go to references
+      "shift-enter": "editor::OpenExcerpts", // select snippet from excerpt page
+      "space h": "workspace::ToggleBottomDock",
+      "space e": "workspace::ToggleLeftDock",
+      "space c": "project_panel::CollapseAllEntries"
+    }
+  },
+  {
+    "context": "editor && vim_mode == visual && !vimwaiting && !menu",
+    "bindings": {
+      // visual, visual line & visual block modes
+      "tab": "editor::Tab",
+      "shift-tab": "editor::TabPrev"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in insert mode
+      // "j k": "vim::NormalBefore" // remap jk in insert mode to escape.
+      "j k": ["workspace::SendKeystrokes", "escape"] // remap jk in insert mode to escape.
+    }
+  }
+]
