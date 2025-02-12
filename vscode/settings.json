@@ -10,6 +10,23 @@
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
+      "before": [
+        "<leader>",
+        "i"
+      ],
+      "commands": [
+        "editor.action.showHover"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.showHover"
+      ]
+    },
+    {
       "before": ["<leader>", "x"],
       "commands": [":bd!"]
     },
