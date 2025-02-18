@@ -23,7 +23,11 @@
 
 ### Prompt Files
 
-- Add `"chat.promptFiles": true` to `settings.json`
+- To enable prompt files add this to `settings.json`
+```json
+"chat.promptFiles": true
+```
+
 - Put prompt files in `.github/prompts` and label `<promptname>.prompt.md`
 - To add prompt file:
   1. Inside Copilot Chat select the paperclip icon or `ctrl-/`
