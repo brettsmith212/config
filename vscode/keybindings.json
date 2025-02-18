@@ -40,5 +40,9 @@
   {
     "key": "ctrl+a a",
     "command": "editor.action.selectAll"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.closeActiveEditor"
   }
 ]
