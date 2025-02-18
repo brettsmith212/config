@@ -36,5 +36,9 @@
   {
     "key": "ctrl+i",
     "command": "inlineChat.start",
+  },
+  {
+    "key": "ctrl+a a",
+    "command": "editor.action.selectAll"
   }
 ]
