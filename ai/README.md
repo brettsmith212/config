@@ -24,3 +24,13 @@
   1. Inside Copilot Chat select the paperclip icon or `ctrl-/`
   2. Select `Prompt...`
   3. Select prompt from drop down
+
+## Prompt Library
+
+[takeoffai prompt library](https://www.jointakeoff.com/prompts)
+
+1. [Request Prompt](./prompt-library/request-prompt.md)
+2. [Spec Prompt](./prompt-library/spec-prompt.md)
+3. [Planner Prompt](./prompt-library/planner-prompt.md)
+4. [Codegen Prompt](./prompt-library/codegen-prompt.md) or [Codegen Prompt (XML)](./prompt-library/codegen-xml-prompt.md)
+5. [Review Prompt](./prompt-library/review-prompt.md)
