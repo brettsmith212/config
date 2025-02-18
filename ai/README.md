@@ -1,4 +1,6 @@
-# Github Copilot
+# AI Setup
+
+## Github Copilot
 
 [Custom Instructions for Github Copilot in VSCode](https://code.visualstudio.com/docs/copilot/copilot-customization)
 
