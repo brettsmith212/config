@@ -16,6 +16,11 @@
 ]
 ```
 
+- Add this to `settings.json` for #codebase to work in copilot edit
+```json
+"github.copilot.chat.edits.codesearch.enabled": true
+```
+
 ### Prompt Files
 
 - Add `"chat.promptFiles": true` to `settings.json`
