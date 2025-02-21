@@ -13,14 +13,7 @@
       // close terminal when toggling out
       "ctrl-`": "workspace::ToggleBottomDock",
       "ctrl-t": "workspace::NewTerminal",
-      "ctrl-/": "assistant::InlineAssist"
-    }
-  },
-  {
-    "context": "AssistantPanel",
-    "bindings": {
-      // close assistant panel when toggling out
-      "cmd-?": "workspace::ToggleRightDock"
+      "ctrl-i": "assistant::InlineAssist"
     }
   },
   {
@@ -33,7 +26,12 @@
   {
     "context": "Editor && !menu",
     "bindings": {
-      "ctrl-/": "assistant::InlineAssist"
+      "ctrl-i": "assistant::InlineAssist"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-l": "workspace::ToggleRightDock"
     }
   },
   {
