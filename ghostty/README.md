@@ -2,7 +2,7 @@
 
 ## Ubuntu Setup
 
-`/usr/share/applications/com.mitchellh.ghostty.desktop
+`/usr/share/applications/com.mitchellh.ghostty.desktop`
 ```
 [Desktop Entry]
 Type=Application
