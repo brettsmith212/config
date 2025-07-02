@@ -1,6 +1,9 @@
-// cmd + shift + p -> Open Keyboard Shortcuts (JSON)
-
 [
+  {
+    "key": "ctrl+r",
+    "command": "workbench.action.reloadWindow",
+    "when": "inDebugMode"
+  },
   {
     "key": "ctrl+f12",
     "command": "editor.action.openLink"
@@ -25,13 +28,9 @@
     "key": "ctrl+a -",
     "command": "workbench.action.terminal.split"
   },
-    {
-    "key": "ctrl+l",
-    "command": "workbench.panel.chat.view.copilot.focus",
-  },
   {
-    "key": "ctrl+k",
-    "command": "workbench.panel.chat.view.edits.focus",
+    "key": "ctrl+l",
+    "command": "amp.agent.toggleVisibility"
   },
   {
     "key": "ctrl+i",
