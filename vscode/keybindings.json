@@ -43,5 +43,49 @@
   {
     "key": "ctrl+w",
     "command": "workbench.action.closeActiveEditor"
+  },
+  {
+        "key": "ctrl+shift+h",
+        "command": "workbench.view.scm",
+        "when": "!sideBarFocus || !(activeViewlet == 'workbench.view.scm')"
+  },
+  {
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+  },
+  {
+        "key": "ctrl+shift+j",
+        "command": "workbench.panel.markers.view.focus",
+        "when": "!panelVisible || activePanel != 'workbench.panel.markers'"
+  },
+  {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.togglePanel",
+        "when": "panelVisible && activePanel == 'workbench.panel.markers'"
+  },
+  {
+        "key": "ctrl+shift+k",
+        "command": "workbench.debug.action.focusRepl",
+        "when": "!panelVisible || activePanel != 'workbench.panel.repl'"
+  },
+  {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.togglePanel",
+        "when": "panelVisible && activePanel == 'workbench.panel.repl'"
+  },
+  {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.terminal.focus",
+        "when": "!panelVisible || activePanel != 'terminal'"
+  },
+  {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.togglePanel",
+        "when": "panelVisible && activePanel == 'terminal'"
+  },
+  {
+        "key": "ctrl+shift+;",
+        "command": "workbench.action.toggleAuxiliaryBar"
   }
 ]
