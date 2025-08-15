@@ -20,6 +20,7 @@ or
   - Expand `Mission Control` box
   - Select all `Switch to Desktop n` (should be 7 from creating earlier)
   - Now you can switch between the 7 desktops using Ctrl + 1, Ctrl + 2, etc
+  - If you double click the `^ + 1` you can record a custom keybinding like `CMD + 1`
 - Accessibility -> Display
   - Turn `Reduce motion` on
   - Allows instant transition between desktops
