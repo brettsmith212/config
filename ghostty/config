@@ -1,8 +1,10 @@
-theme = SeaShells
+theme = Everforest Dark Hard
 font-size = 16
+font-family = "TX-02"
 shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
 adjust-cell-height = 25%
+confirm-close-surface = false
 
 mouse-hide-while-typing = true
 mouse-scroll-multiplier = 2
