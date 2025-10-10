@@ -26,3 +26,26 @@ vim.api.nvim_create_autocmd("FileChangedShellPost", {
   end,
 })
 ```
+## Add snippet to `lua/plugins/everforest.lua` to match ghostty everforest theme
+```lua
+return {
+  {
+    "neanias/everforest-nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("everforest").setup({
+        background = "hard",
+        transparent_background_level = 1,
+      })
+      vim.cmd("colorscheme everforest")
+    end,
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "everforest",
+    },
+  },
+}
+```
