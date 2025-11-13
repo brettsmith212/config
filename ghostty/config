@@ -25,6 +25,7 @@ keybind = ctrl+a>\=new_split:right
 keybind = ctrl+a>c=new_tab
 keybind = ctrl+a>n=next_tab
 keybind = ctrl+a>p=previous_tab
+keybind = ctrl+a>,=prompt_surface_title
 
 keybind = ctrl+a>r=reload_config
 keybind = ctrl+a>x=close_surface
