@@ -49,6 +49,26 @@ return {
   },
 }
 ```
+## Add snippet to `lua/config/options.lua` (note the section for only remote ssh nvim)
+```lua
+vim.opt.relativenumber = false
+---- BEGIN USE ON REMOTE SSH NVIM ----
+vim.opt.clipboard = "unnamedplus"
+
+-- OSC 52 clipboard for SSH
+vim.g.clipboard = {
+  name = "OSC 52",
+  copy = {
+    ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
+    ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+  },
+  paste = {
+    ["+"] = require("vim.ui.clipboard.osc52").paste("+"),
+    ["*"] = require("vim.ui.clipboard.osc52").paste("*"),
+  },
+---- END USE ON REMOTE SSH NVIM ----
+}
+```
 ## Make sure `lazyvim.json` has this extras neo-tree line to avoid double `<leader>e` file trees
 ```lua
 {
