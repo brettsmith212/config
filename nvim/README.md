@@ -49,3 +49,16 @@ return {
   },
 }
 ```
+## Make sure `lazyvim.json` has this extras neo-tree line to avoid double `<leader>e` file trees
+```lua
+{
+  "extras": [
+    "lazyvim.plugins.extras.editor.neo-tree"
+  ],
+  "install_version": 8,
+  "news": {
+    "NEWS.md": "11866"
+  },
+  "version": 8
+}
+```
