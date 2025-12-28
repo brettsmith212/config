@@ -7,4 +7,5 @@
 - vscode configs
 - ghostty
 - omakub
+- obsidian
 - github copilot
