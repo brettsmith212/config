@@ -29,6 +29,7 @@ keybind = ctrl+a>p=previous_tab
 
 keybind = ctrl+a>r=reload_config
 keybind = ctrl+a>x=close_surface
+keybind = ctrl+a>,=prompt_surface_title
 
 # resize split pane
 keybind = ctrl+j=resize_split:down,25
