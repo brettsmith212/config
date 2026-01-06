@@ -69,6 +69,15 @@ vim.g.clipboard = {
 ---- END USE ON REMOTE SSH NVIM ----
 }
 ```
+## Add snippet to `lua/plugins/lazygit.lua`
+```lua
+return {
+  "folke/snacks.nvim",
+  keys = {
+    { "<leader>gg", function() Snacks.lazygit() end, desc = "LazyGit" },
+  },
+}
+```
 ## Make sure `lazyvim.json` has this extras neo-tree line to avoid double `<leader>e` file trees
 ```lua
 {
