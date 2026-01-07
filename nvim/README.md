@@ -14,9 +14,11 @@ vim.keymap.set({ "n", "t" }, "<C-h>", "<cmd>wincmd h<cr>", { desc = "Go to left 
 vim.keymap.set({ "n", "t" }, "<C-l>", "<cmd>wincmd l<cr>", { desc = "Go to right window", noremap = true })
 vim.keymap.set({ "n", "t" }, "<C-j>", "<cmd>wincmd j<cr>", { desc = "Go to lower window", noremap = true })
 vim.keymap.set({ "n", "t" }, "<C-k>", "<cmd>wincmd k<cr>", { desc = "Go to upper window", noremap = true })
-
 ```
-
+## Add snippet to `lua/config/options.lua`
+```lua
+vim.opt.relativenumber = false
+```
 ## Add snippet to `lua/config/autocmds.lua` for auto reload w/ cli ai agents
 ```lua
 vim.opt.autoread = true
