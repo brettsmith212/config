@@ -30,11 +30,11 @@ keybind = ctrl+a>,=prompt_surface_title
 keybind = ctrl+a>r=reload_config
 keybind = ctrl+a>x=close_surface
 
-# resize split pane
-keybind = ctrl+j=resize_split:down,25
-keybind = ctrl+k=resize_split:up,25
-keybind = ctrl+h=resize_split:left,25
-keybind = ctrl+l=resize_split:right,25
+# resize split pane (with prefix, like tmux)
+keybind = ctrl+a>ctrl+j=resize_split:down,25
+keybind = ctrl+a>ctrl+k=resize_split:up,25
+keybind = ctrl+a>ctrl+h=resize_split:left,25
+keybind = ctrl+a>ctrl+l=resize_split:right,25
 
 # move cursor
 keybind = ctrl+a>j=goto_split:bottom
