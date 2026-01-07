@@ -85,6 +85,80 @@ return {
   },
 }
 ```
+## Add snippet to `lua/plugins/neo-tree.lua`
+```lua
+return {
+  "nvim-neo-tree/neo-tree.nvim",
+  opts = {
+    filesystem = {
+      filtered_items = {
+        visible = true,
+        hide_dotfiles = false,
+        hide_gitignored = false,
+      },
+    },
+  },
+}
+```
+## Add snippet to `lua/plugins/python.lua`
+```lua
+return {
+  -- LSP: ty (Astral's type checker)
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        ty = {
+          settings = {
+            ty = {
+              -- diagnostics for all open files, not just current
+              diagnosticMode = "openFilesOnly",
+            },
+          },
+        },
+        -- ruff for linting (not type checking)
+        ruff = {
+          init_options = {
+            settings = {
+              organizeImports = true,
+            },
+          },
+        },
+      },
+    },
+  },
+
+  -- Ensure tools are installed via Mason
+  {
+    "mason-org/mason.nvim",
+    opts = function(_, opts)
+      opts.ensure_installed = opts.ensure_installed or {}
+      vim.list_extend(opts.ensure_installed, {
+        "ty",
+        "ruff",
+      })
+    end,
+  },
+
+  -- Treesitter
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = { "python" },
+    },
+  },
+
+  -- Formatting with conform.nvim using ruff
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        python = { "ruff_format", "ruff_organize_imports" },
+      },
+    },
+  },
+}
+```
 ## Make sure `lazyvim.json` has this extras neo-tree line to avoid double `<leader>e` file trees
 ```lua
 {
